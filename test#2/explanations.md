@@ -14,7 +14,7 @@ We could imagine that the app has this kind of DB schema :
 |  due_date | datetime |
 | user_id | bigint |
 
--> foreign_key: user_id
+-> foreign_key: user_id (index)
 
 Then we could add a ```:late``` scope to the task model to query the tasks which aren't done and which due date is in the past.
 
